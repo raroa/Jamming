@@ -23,7 +23,7 @@ class App extends React.Component {
     }
 
     addTrack(track) {
-        if(!track.id === this.state.playlistTracks) {
+        if(!track.id === this.state.playlistTracks.track.id) {
             tracks.push(track)
         }
         this.setState({playlistTracks: tracks})
