@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './TrackList.css';
+import { Track } from '../Track/Track';
 
-class TrackList extends React.Component {
+ export class TrackList extends React.Component {
     render() {
         (
             <div className="TrackList">
