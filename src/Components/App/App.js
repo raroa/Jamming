@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import { Spotify } from './util/Spotify';
 import { Playlist } from './components/Playlist/Playlist';
+import { SearchBar } from '../Searchbar/Searchbar';
+import { SearchResults } from '../SearchResults/SearchResults';
 
 class App extends React.Component {
     constructor(props) {
