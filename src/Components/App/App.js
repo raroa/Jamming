@@ -39,7 +39,7 @@ class App extends React.Component {
     }
 
     updatePlaylistName(name) {
-        setState({playlistName: name});
+        this.setState({playlistName: name});
     }
 
     savePlaylist() {
