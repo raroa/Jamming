@@ -6,7 +6,7 @@ import { Playlist } from './components/Playlist/Playlist';
 import { SearchBar } from '../Searchbar/Searchbar';
 import { SearchResults } from '../SearchResults/SearchResults';
 import { TrackList } from '../TrackList/TrackList';
-import { Track } from '../Track/Track'
+import { Track } from '../Track/Track';
 
 class App extends React.Component {
     constructor(props) {
