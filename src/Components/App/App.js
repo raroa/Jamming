@@ -28,7 +28,7 @@ class App extends React.Component {
         if(!track.id === this.state.playlistTracks.track.id) {
             tracks.push(track)
         }
-        this.setState({playlistTracks: tracks})
+        this.setState({playlistTracks: tracks});
     }
 
     removeTrack(track) {
