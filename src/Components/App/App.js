@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import { Spotify } from './util/Spotify';
-import { Playlist } from './components/Playlist/Playlist';
-import { SearchBar } from '../Searchbar/Searchbar';
+import { Spotify } from '../util/Spotify';
+import { Playlist } from '../Playlist/Playlist';
+import { SearchBar } from '../SearchBar/SearchBar';
 import { SearchResults } from '../SearchResults/SearchResults';
 import { TrackList } from '../TrackList/TrackList';
 import { Track } from '../Track/Track';
@@ -27,6 +27,7 @@ class App extends React.Component {
     }
 
     addTrack(track) {
+        let tracks = this.state.playlistTracks;
         if(!track.id === this.state.playlistTracks.track.id) {
             tracks.push(track)
         }
@@ -34,6 +35,7 @@ class App extends React.Component {
     }
 
     removeTrack(track) {
+        let tracks = this.state.playlistTracks;
         if(track.id === this.state.playlistTracks) {
             tracks.remove(track);
         }
