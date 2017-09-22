@@ -1,7 +1,8 @@
 const clientID = '8bcaf185467648fb8f7ec1ca4d479f5f';
 const redirectURI= 'http://localhost:3000/';
-const accessToken = '';
-export let Spotify = {
+let accessToken = '';
+
+const Spotify = {
     getAccessToken() {
         if(accessToken != null) {
             return accessToken;
@@ -55,4 +56,4 @@ export let Spotify = {
     }
 }
 
-module.exports = Sportify;
+export default Spotify;
