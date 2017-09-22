@@ -27,10 +27,15 @@ class App extends React.Component {
     }
 
     addTrack(track) {
+        //let tracks = this.state.playlistTracks;
+        //if(!track.id === this.state.playlistTracks.track.id) {
+        //    tracks.push(track)
+        //}
+        //this.setState({playlistTracks: tracks});
+
         let tracks = this.state.playlistTracks;
-        if(!track.id === this.state.playlistTracks.track.id) {
-            tracks.push(track)
-        }
+        tracks.push(track);
+    
         this.setState({playlistTracks: tracks});
     }
 
