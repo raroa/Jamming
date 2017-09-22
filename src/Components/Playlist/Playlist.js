@@ -15,7 +15,7 @@ import { TrackList } from '../TrackList/TrackList';
     }
 
     render() {
-        (
+         return (
             <div className="Playlist">
             <input value="New Playlist" onChange={this.handleNameChange}/>
             <TrackList tracks={this.props.playlistTracks} onRemove={this.props.onRemove} />
