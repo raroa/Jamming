@@ -41,9 +41,15 @@ class App extends React.Component {
 
     removeTrack(track) {
         let tracks = this.state.playlistTracks;
-        if(track.id === this.state.playlistTracks) {
-            tracks.remove(track);
-        }
+
+        tracks = tracks.filter((current) => {
+            if (current.id !== track.id) {
+                return true;
+              } else {
+                return false;
+              }
+        });
+
         this.setState({playlistTracks: tracks});
     }
 
