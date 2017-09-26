@@ -5,8 +5,6 @@ import { Spotify } from '../../util/Spotify';
 import { Playlist } from '../Playlist/Playlist';
 import { SearchBar } from '../SearchBar/SearchBar';
 import { SearchResults } from '../SearchResults/SearchResults';
-import { TrackList } from '../TrackList/TrackList';
-import { Track } from '../Track/Track';
 
 class App extends React.Component {
     constructor(props) {
