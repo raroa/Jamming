@@ -23,7 +23,7 @@ export const Spotify = {
 
 search(searchTerm) {
     return fetch(`https://api.spotify.com/v1/search?type=track&q=${searchTerm}`, {
-        headers: {Authorisation: `Bearer ${accessToken}`}
+        headers: {Authorization: `Bearer ${accessToken}`}
     }).then(response => {return response.json()}).then(jsonResponse => {
         if(jsonResponse.tracks) {
             return jsonResponse.tracks.map(
