@@ -10,7 +10,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            searchResults: [{name: '99 problems', artist: 'Jaz-Z', album: 'Gotcha'}, {name: '99 problems 2', artist: 'Jaz-Z 2', album: 'Gotcha 2'}, {name: '99 problems 3', artist: 'Jaz-Z 3', album: 'Gotcha 3'}],
+            searchResults: [{name: 'Soul search', artist: 'Sting', album: 'Gotcha'}, {name: 'no worries', artist: 'no mercy', album: 'Gotcha 2'}, {name: '99 problems', artist: 'Jaz-Z', album: 'Gotcha 3'}],
             playlistName: 'The best songs',
             playlistTracks: [
                 {name: 'probably me', artist: 'Sting', album: 'Fields of Gold', id: 1, uri: 69-1}, 
@@ -66,7 +66,9 @@ class App extends React.Component {
 }
 
     search(term) {
-        Spotify.search(term);
+        Spotify.search(term).then(searchResults => {
+            this.setState({searchResults: searchResults});
+          });
     }
 
     render() {
