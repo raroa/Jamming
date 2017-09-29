@@ -6,7 +6,7 @@ export class SearchBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            term: 'Search a song'
+            term: ''
         }
 
         this.search = this.search.bind(this);
