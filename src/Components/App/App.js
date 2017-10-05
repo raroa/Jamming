@@ -11,7 +11,7 @@ class App extends React.Component {
         super(props);
         this.state = { 
             searchResults: [{name: 'Soul search', artist: 'Sting', album: 'Gotcha'}, {name: 'no worries', artist: 'no mercy', album: 'Gotcha 2'}, {name: '99 problems', artist: 'Jaz-Z', album: 'Gotcha 3'}],
-            playlistName: 'The best songs',
+            playlistName: 'The best songs?',
             playlistTracks: [
                 {name: 'probably me', artist: 'Sting', album: 'Fields of Gold', id: 1, uri: 69-1}, 
                 {name: 'the hipe', artist: 'Lennon', album: 'Second album', id: 2, uri: 28-4}, 
